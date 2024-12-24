@@ -1,10 +1,10 @@
 <script lang="ts" setup>
 import FooterItem from "./footer-item.vue";
 
-import locationIcon from "@/assets/images/location.svg";
-import phoneIcon from "@/assets/images/phone.svg";
-import emailIcon from "@/assets/images/email.svg";
-import clockIcon from "@/assets/images/clock.svg";
+import locationIcon from "@/assets/icons/location.svg";
+import phoneIcon from "@/assets/icons/phone.svg";
+import emailIcon from "@/assets/icons/email.svg";
+import clockIcon from "@/assets/icons/clock.svg";
 
 const footerItems = [
   {
@@ -40,7 +40,7 @@ const footerItems = [
       <div class="footer-first-column">
         <div class="footer-first-column-logo">
           <NuxtLink to="/">
-            <img src="" alt="" />
+            <img src="../../assets/images/logo-footer.svg" alt="" />
           </NuxtLink>
         </div>
         <div class="footer-first-column-items">
@@ -61,6 +61,12 @@ const footerItems = [
 <style lang="scss" scoped>
 .footer-first-column {
   &-logo {
+    a {
+      img {
+        width: 260px;
+        height: 65px;
+      }
+    }
   }
   &-items {
     display: flex;
