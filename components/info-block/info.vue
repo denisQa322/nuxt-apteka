@@ -32,7 +32,7 @@ const infoItems = [
 
 <template>
   <section class="info">
-    <div class="info-block">
+    <div class="info-block container">
       <div class="info-block-items">
         <infoItem
           v-for="(item, index) in infoItems"
@@ -54,8 +54,6 @@ const infoItems = [
   background-color: #575a5b;
   padding: toVw(28px);
   .info-block {
-    width: toVw(1600px);
-    margin: auto;
     &-items {
       display: flex;
       gap: toVw(10px);

@@ -124,8 +124,6 @@ footer {
   padding: toVw(45px);
   color: #ffffff;
   .container {
-    width: toVw(1600px);
-    margin: auto;
     display: flex;
     gap: toVw(90px);
     .footer-column {
