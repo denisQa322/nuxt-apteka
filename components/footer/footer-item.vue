@@ -36,22 +36,20 @@ defineProps({
 </template>
 
 <style lang="scss">
+@use "@/assets/styles/tovw.scss" as *;
+
 .footer-item {
   display: flex;
-  gap: 14px;
+  gap: toVw(14px);
   align-items: center;
   &-icon {
-    margin-right: 15px;
-    img {
-      width: 15px;
-      height: 15px;
-    }
+    margin-right: toVw(15px);
   }
   &-info {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    font-size: 14px;
+    gap: toVw(15px);
+    font-size: toVw(17px);
     &-header {
       font-weight: 800;
       p {
@@ -61,7 +59,7 @@ defineProps({
     &-text {
       a {
         text-decoration: none;
-        color: black;
+        color: #ffffff;
         cursor: pointer;
       }
     }
