@@ -34,13 +34,14 @@ const goToCatalogue = [
     :go-to-image="goToCatalogue[0].goToImage"
     :go-to-link="goToCatalogue[0].goToLink"
   />
-  <Mission />
+
   <GoToCatalogue
     :go-to-header="goToCatalogue[1].goToHeader"
     :go-to-text="goToCatalogue[1].goToText"
     :go-to-image="goToCatalogue[1].goToImage"
     :go-to-link="goToCatalogue[1].goToLink"
   />
+  <Mission />
 </template>
 
 <style scoped lang="scss"></style>
