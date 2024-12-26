@@ -1,10 +1,13 @@
 <script setup lang="ts">
 import Info from "~/components/info-block/info.vue";
-import GoToCatalogue from "~/components/goToCatalogue.vue";
+import GoToCatalogue from "~/components/go-to-catalogue.vue";
 import Mission from "~/components/mission.vue";
 
 import goToImageOne from "@/assets/images/thorne-img.png";
 import goToImageTwo from "@/assets/images/сosmeticsBabyProducts.png";
+import ItemsList from "@/components/items/items-list.vue";
+
+const headerNames = [{ headerName: "Новые продукты" }];
 
 const goToCatalogue = [
   {
@@ -24,6 +27,7 @@ const goToCatalogue = [
 
 <template>
   <Info />
+  <ItemsList :headerName="headerNames[0].headerName" />
   <GoToCatalogue
     :go-to-header="goToCatalogue[0].goToHeader"
     :go-to-text="goToCatalogue[0].goToText"

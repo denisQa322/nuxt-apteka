@@ -42,14 +42,13 @@ defineProps({
 @use "@/assets/styles/tovw.scss" as *;
 
 .go-to-catalogue {
-  width: toVw(1600px);
-  margin: auto;
   padding: toVw(40px);
   background: url("../assets/images/backgroundGoTo.svg");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   justify-content: space-between;
+  margin-bottom: toVw(20px);
   &-info {
     color: #ffffff;
     &-header {

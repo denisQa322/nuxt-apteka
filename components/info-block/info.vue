@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import infoItem from "./infoItem.vue";
+import infoItem from "./info-item.vue";
 
 import locationIcon from "@/assets/icons/infoLocation.svg";
 import deliveryIcon from "@/assets/icons/delivery.svg";
@@ -32,7 +32,7 @@ const infoItems = [
 
 <template>
   <section class="info">
-    <div class="info-block">
+    <div class="info-block container">
       <div class="info-block-items">
         <infoItem
           v-for="(item, index) in infoItems"
@@ -53,9 +53,8 @@ const infoItems = [
   color: #ffffff;
   background-color: #575a5b;
   padding: toVw(28px);
+  margin-bottom: toVw(25px);
   .info-block {
-    width: toVw(1600px);
-    margin: auto;
     &-items {
       display: flex;
       gap: toVw(10px);
