@@ -44,6 +44,9 @@ defineProps({
   align-items: center;
   &-icon {
     margin-right: toVw(15px);
+    img {
+      width: toVw(20px);
+    }
   }
   &-info {
     display: flex;
@@ -58,7 +61,6 @@ defineProps({
     }
     &-text {
       a {
-        text-decoration: none;
         color: #ffffff;
         cursor: pointer;
       }

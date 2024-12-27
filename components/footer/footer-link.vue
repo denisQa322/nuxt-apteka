@@ -26,8 +26,6 @@ defineProps({
 .footer-second-column-link {
   a {
     color: #ffffff;
-    cursor: pointer;
-    text-decoration: none;
     img {
       width: toVw(13px);
       height: toVw(13px);

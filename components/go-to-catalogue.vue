@@ -49,6 +49,7 @@ defineProps({
   display: flex;
   justify-content: space-between;
   margin-bottom: toVw(20px);
+
   &-info {
     color: #ffffff;
     &-header {
@@ -57,7 +58,7 @@ defineProps({
     }
     &-text {
       font-size: toVw(17px);
-      margin-bottom: toVw(36px);
+      margin-bottom: toVw(60px);
     }
     &-button {
       a {

@@ -1,4 +1,17 @@
 <script lang="ts" setup>
+import Button from "@/components/Buttons/go-to-button.vue";
+import FavoriteIcon from "@/assets/icons/favorite.svg";
+import CartIcon from "@/assets/icons/cart.svg";
+
+const iconsList = [
+  { iconSrc: `${FavoriteIcon}`, iconLink: "/" },
+  {
+    iconSrc: `${CartIcon}`,
+    iconLink: "/",
+    iconBackgroundColor: "#71bf44",
+  },
+];
+
 defineProps({
   itemLink: {
     type: String,
@@ -29,16 +42,13 @@ defineProps({
       <div class="item-info-price">{{ itemPrice }}</div>
     </NuxtLink>
     <div class="item-buttons">
-      <div class="favourite-button">
-        <a href="/">
-          <img src="" alt="" />
-        </a>
-      </div>
-      <div class="add-to-cart-button">
-        <a href="/">
-          <img src="" alt="" />
-        </a>
-      </div>
+      <Button
+        v-for="(item, index) in iconsList"
+        :key="index"
+        :iconSrc="item.iconSrc"
+        :iconLink="item.iconLink"
+        :iconBackgroundColor="item.iconBackgroundColor"
+      />
     </div>
   </div>
 </template>
@@ -52,7 +62,6 @@ defineProps({
   padding: toVw(20px) toVw(25px);
   &-info,
   a {
-    text-decoration: none;
     color: black;
     display: flex;
     flex-direction: column;
@@ -79,22 +88,6 @@ defineProps({
   &-buttons {
     display: flex;
     justify-content: space-between;
-    .favourite-button {
-      width: toVw(50px);
-      border-radius: 50%;
-      a {
-        height: toVw(50px);
-        background-color: #71bf44;
-      }
-    }
-    .add-to-cart-button {
-      width: toVw(50px);
-      border-radius: 50%;
-      a {
-        height: toVw(50px);
-        background-color: #71bf44;
-      }
-    }
   }
 }
 </style>
