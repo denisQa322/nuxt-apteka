@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import ItemCard from "./Iitem-card.vue";
+import ItemCard from "./item-card.vue";
 
 import itemImg from "@/assets/images/artrosila.jpg";
 
