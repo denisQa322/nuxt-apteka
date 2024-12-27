@@ -85,7 +85,6 @@ const items = [
       display: flex;
       flex-direction: column;
       padding: toVw(20px);
-      width: toVw(320px);
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
     &-slider {

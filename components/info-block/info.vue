@@ -8,22 +8,22 @@ import originalIcon from "@/assets/icons/original.svg";
 
 const infoItems = [
   {
-    infoIcon: `${locationIcon}`,
+    infoIcon: locationIcon,
     infoHeader: "Сеть Аптек",
     infoDescription: "Мы работаем по всему Казахстану",
   },
   {
-    infoIcon: `${deliveryIcon}`,
+    infoIcon: deliveryIcon,
     infoHeader: "СЕРВИС ДОСТАВКИ",
     infoDescription: "Отправка в любой город Казахстана",
   },
   {
-    infoIcon: `${walletIcon}`,
+    infoIcon: walletIcon,
     infoHeader: "Удобная оплата",
     infoDescription: "Оплата при получении или на счет",
   },
   {
-    infoIcon: `${originalIcon}`,
+    infoIcon: originalIcon,
     infoHeader: "15000 наименований",
     infoDescription: "Более 15000 товаров от производителя",
   },

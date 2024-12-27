@@ -16,26 +16,26 @@ const footerHeaders = [
 
 const footerItems = [
   {
-    iconSrc: `${locationIcon}`,
+    iconSrc: locationIcon,
     headerText: "Адрес",
     infoText:
       "Алматы, проспект Суюнбая 2, корпус 4 (за торговым\n центром Мерей)",
     linkUrl: "/contacts",
   },
   {
-    iconSrc: `${phoneIcon}`,
+    iconSrc: phoneIcon,
     headerText: "Телефон",
     infoText: "+7 (705) 255 25 25",
     linkUrl: "tel:+7 (705) 255 25 25",
   },
   {
-    iconSrc: `${emailIcon}`,
+    iconSrc: emailIcon,
     headerText: "Email",
     infoText: "info@keremetprojects.com",
     linkUrl: "mailto: info@keremetprojects.com",
   },
   {
-    iconSrc: `${clockIcon}`,
+    iconSrc: clockIcon,
     headerText: "Режим работы",
     infoText: "Круглосуточно",
     linkUrl: "/contacts",

@@ -1,12 +1,12 @@
 <script lang="ts" setup>
-import Button from "@/components/Buttons/go-to-button.vue";
+import Button from "~/components/Buttons/cart-buttons.vue";
 import FavoriteIcon from "@/assets/icons/favorite.svg";
 import CartIcon from "@/assets/icons/cart.svg";
 
 const iconsList = [
-  { iconSrc: `${FavoriteIcon}`, iconLink: "/" },
+  { iconSrc: FavoriteIcon, iconLink: "/" },
   {
-    iconSrc: `${CartIcon}`,
+    iconSrc: CartIcon,
     iconLink: "/",
     iconBackgroundColor: "#71bf44",
   },

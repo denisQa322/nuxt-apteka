@@ -13,31 +13,31 @@ defineProps({
 const items = [
   {
     itemLink: "/",
-    itemImg: `${itemImg}`,
+    itemImg: itemImg,
     itemName: "АртроСила капс 400мг №40 упак",
     itemPrice: "4 975 ₸",
   },
   {
     itemLink: "/",
-    itemImg: `${itemImg}`,
+    itemImg: itemImg,
     itemName: "АртроСила капс 400мг №40 упак",
     itemPrice: "4 975 ₸",
   },
   {
     itemLink: "/",
-    itemImg: `${itemImg}`,
+    itemImg: itemImg,
     itemName: "АртроСила капс 400мг №40 упак",
     itemPrice: "4 975 ₸",
   },
   {
     itemLink: "/",
-    itemImg: `${itemImg}`,
+    itemImg: itemImg,
     itemName: "АртроСила капс 400мг №40 упак",
     itemPrice: "4 975 ₸",
   },
   {
     itemLink: "/",
-    itemImg: `${itemImg}`,
+    itemImg: itemImg,
     itemName: "АртроСила капс 400мг №40 упак",
     itemPrice: "4 975 ₸",
   },

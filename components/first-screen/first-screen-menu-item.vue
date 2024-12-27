@@ -23,7 +23,7 @@ defineProps({
   <li :style="{ backgroundColor: itemBackgroundColor }" class="menu-item">
     <NuxtLink class="menu-item-link" :to="itemLink">
       <img :src="iconSrc" alt="" />
-      <p>{{ itemName }}</p>
+      {{ itemName }}
     </NuxtLink>
   </li>
 </template>
@@ -34,17 +34,15 @@ defineProps({
 .menu-item {
   border-bottom: 1px solid grey;
   &-link {
-    padding: toVw(19px) toVw(26px);
+    padding: toVw(26px);
     display: flex;
     align-items: center;
-    height: toVw(88.5px);
+    height: toVw(85px);
+    font-size: toVw(19px);
+      font-weight: 600;
     img {
       width: toVw(50px);
       margin-right: toVw(20px);
-    }
-    p {
-      font-size: toVw(19px);
-      font-weight: 600;
     }
   }
   &:nth-last-child(1) {
