@@ -7,7 +7,10 @@ import GigienaIcon from "@/assets/icons/gigiena.svg";
 import BadyIcon from "@/assets/icons/bady.svg";
 import PharmamaIcon from "@/assets/icons/pharmama.svg";
 import IntimIcon from "@/assets/icons/intim.svg";
+import IntimGreenIcon from "@/assets/icons/intim-green.svg"
 import SliderImg from "@/assets/images/slider-img-1.jpeg";
+
+console.log(SliderImg)
 
 const items = [
   {
@@ -45,6 +48,7 @@ const items = [
     itemName: "Интим отдел 18+",
     iconSrc: IntimIcon,
     itemBackgroundColor: "#e269cd",
+    hoverIconSrc: IntimGreenIcon,
   },
 ];
 </script>
@@ -60,11 +64,12 @@ const items = [
           :item-name="item.itemName"
           :icon-src="item.iconSrc"
           :item-background-color="item.itemBackgroundColor"
+          :hover-icon-src="item.hoverIconSrc"
         />
       </ul>
       <div class="first-screen-slider">
         <div class="first-screen-slider-images">
-          <img :src="SliderImg" alt="" />
+          <img :src="SliderImg " alt="" />
         </div>
         <div class="first-screen-slider-buttons"></div>
       </div>
