@@ -8,16 +8,20 @@ defineProps({
 
 <template>
   <div class="button">
-    <a :style="{ backgroundColor: iconBackgroundColor }" :href="iconLink">
+    <NuxtLink
+      class="cart-button"
+      :style="{ backgroundColor: iconBackgroundColor }"
+      :href="iconLink"
+    >
       <img :src="iconSrc" alt="" />
-    </a>
+    </NuxtLink>
   </div>
 </template>
 
 <style lang="scss" scoped>
 @use "@/assets/styles/tovw.scss" as *;
 .button {
-  a {
+  .cart-button {
     border-radius: 50%;
     padding: toVw(12px);
     border: toVw(1px) solid #71bf44;

@@ -2,6 +2,6 @@
 
 <template>
   <div>
-    <h1>Basket Page</h1>
+    <h1>Cart Page</h1>
   </div>
 </template>
